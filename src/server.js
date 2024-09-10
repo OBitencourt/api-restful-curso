@@ -3,8 +3,12 @@ const express = require('express')
 
 const app = express()
 
-//conexão com banco de dados
-// db.connect()
+const db = require('./database/db')
+
+// conexão com banco de dados 
+
+db.connect()
+
 
 const routes = require('./routes/routes')
 
