@@ -12,9 +12,9 @@ db.connect()
 
 const routes = require('./routes/routes')
 
-// habilita server para receber dados via post (form)
+// habilita server para receber dados json
 
-app.use(express.urlencoded({express: true}))
+app.use(express.json())
 
 
 // habilitando rotas
